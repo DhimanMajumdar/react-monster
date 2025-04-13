@@ -1,3 +1,29 @@
+import React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
+import useFetch from "./useFetch";
+
+const App = () => {
+  //   const [data, setData] = useState(null);
+  //   useEffect(() => {
+  //     fetch("https://jsonplaceholder.typicode.com/todos")
+  //       .then((res) => res.json())
+  //       .then((data) => setData(data));
+  //   }, []);
+
+  const [data] = useFetch("https://jsonplaceholder.typicode.com/todos");
+  return (
+    <div>
+      {data &&
+        data.map((item) => {
+          return <p key={item.id}>{item.title}</p>;
+        })}
+    </div>
+  );
+};
+
+export default App;
+
 // import React from "react";
 // import FocusInput from "./components/FocusInput";
 // import Timer from "./components/Timer";
