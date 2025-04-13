@@ -1,4 +1,40 @@
 // import React from "react";
+// import FocusInput from "./components/FocusInput";
+// import Timer from "./components/Timer";
+
+// const App = () => {
+//   return (
+//     <div>
+//       <FocusInput />
+//       <Timer />
+//     </div>
+//   );
+// };
+
+// export default App;
+
+// import React from "react";
+// import { useRef } from "react";
+
+// const App = () => {
+//   const element = useRef(null);
+//   const focusInput = () => {
+//     element.current.focus();
+//     element.current.value = "Dhiman";
+//   };
+
+//   console.log(element);
+//   return (
+//     <div>
+//       <input type="text" ref={element} />
+//       <button onClick={() => focusInput()}>Focus & Write Dhiman</button>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+// import React from "react";
 // import { useReducer } from "react";
 
 // const initialState = { count: 0 };
