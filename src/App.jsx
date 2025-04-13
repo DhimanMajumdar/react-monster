@@ -1,28 +1,47 @@
-import React from "react";
-import { useState } from "react";
-import { useEffect } from "react";
-import useFetch from "./useFetch";
+// import React from "react";
+// import UniqueID from "./components/UniqueID";
 
-const App = () => {
-  //   const [data, setData] = useState(null);
-  //   useEffect(() => {
-  //     fetch("https://jsonplaceholder.typicode.com/todos")
-  //       .then((res) => res.json())
-  //       .then((data) => setData(data));
-  //   }, []);
+// const App = () => {
+//   return (
+//     <div>
+//       <UniqueID />
+//       <p>
+//         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+//         molestias aperiam quod aliquam quae mollitia labore soluta dicta,
+//         perferendis doloribus.
+//         <UniqueID />
+//       </p>
+//     </div>
+//   );
+// };
 
-  const [data] = useFetch("https://jsonplaceholder.typicode.com/todos");
-  return (
-    <div>
-      {data &&
-        data.map((item) => {
-          return <p key={item.id}>{item.title}</p>;
-        })}
-    </div>
-  );
-};
+// export default App;
 
-export default App;
+// import React from "react";
+// import { useState } from "react";
+// import { useEffect } from "react";
+// import useFetch from "./useFetch";
+
+// const App = () => {
+//   //   const [data, setData] = useState(null);
+//   //   useEffect(() => {
+//   //     fetch("https://jsonplaceholder.typicode.com/todos")
+//   //       .then((res) => res.json())
+//   //       .then((data) => setData(data));
+//   //   }, []);
+
+//   const [data] = useFetch("https://jsonplaceholder.typicode.com/todos");
+//   return (
+//     <div>
+//       {data &&
+//         data.map((item) => {
+//           return <p key={item.id}>{item.title}</p>;
+//         })}
+//     </div>
+//   );
+// };
+
+// export default App;
 
 // import React from "react";
 // import FocusInput from "./components/FocusInput";
